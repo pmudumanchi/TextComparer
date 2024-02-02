@@ -36,6 +36,7 @@ class DiffHelper:
         return jsonify({'result':'This is a diff checker which compares 2 strings'})
     
 endpoints = DiffComparer(app)
+help = DiffHelper(app)
 
 if __name__ == '__main__':
     app.run(debug=True)
